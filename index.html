@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <title>Room Design</title> 
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> 
+        <script src="//cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+        <script src="./shoot.js"></script> 
+    </head>
+    <body>
+        <a-scene>
+            <a-plane id = "ground" width = "10" height = "10" rotation = "-90 0 0" position = "-2 -1.5 -5" src = "textures/tiles.jpg" ></a-plane>
+            <a-entity id = "camera" camera position = "-2 1.6 0"  wasd-controls look-controls></a-entity>
+            <a-box id = "wall" position = "-2 1.5 -10"  depth = "1" src = "textures/brick.jpg" height = "6" width = "10" ></a-box>
+            <a-plane id = "painting" position = "-1 2 -9.45"width = 4 height = 3 src = "textures/painting.jpg"></a-plane>
+            <a-box id = "table" position = "-1.5 0 -6.5"  depth = "4" src = "textures/wood.jpg" height = "0.3" width = "4" ></a-box>
+            <a-cylinder id = "table_leg" position="-1.5 -0.8 -6.5" radius="0.7" height="1.9" src = "textures/wood.jpg"></a-cylinder>
+            <a-cylinder id = "stool_leg" position="-4.5 -0.8 -6.5" radius="0.3" height="1.3" src = "textures/metal.jpg"></a-cylinder>
+            <a-box id = "stool_base" position="-4.5 0 -6.5" depth = "3" width ="1" height="0.1" src = "textures/metal.jpg"></a-box>
+            <a-cylinder id = "stool_leg" position="1.5 -0.8 -6.5" radius="0.3" height="1.3" src = "textures/metal.jpg"></a-cylinder>
+            <a-box id = "stool_base" position="1.5 0 -6.5" depth = "3" width ="1" height="0.1" src = "textures/metal.jpg"></a-box>
+        </a-scene>
+    </body>
+</html>
